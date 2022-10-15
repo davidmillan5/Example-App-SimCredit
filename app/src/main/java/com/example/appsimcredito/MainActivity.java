@@ -134,6 +134,21 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             }
         });
 
+
+        clean.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fullname.setText("");
+                email.setText("");
+                amount.setText("");
+                install12.setChecked(true);
+                fees.setChecked(false);
+                totalDebt.setText("");
+                installValue.setText("");
+                fullname.requestFocus();
+            }
+        });
+
     }
 
     @Override
