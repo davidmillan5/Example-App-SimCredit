@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/subtitle"
+        android:textAlignment="center"
+        android:background="#F6A2A2"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        />
+
+
+    <ImageView
+        android:src="@drawable/credito"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+
+
+        <TextView
+            android:text="@string/fullname"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:id="@+id/fullname"
+            android:hint="Ingrese nombre"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:drawablePadding="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+
+
+        <TextView
+            android:text="Correo Electrónico"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:id="@+id/email"
+            android:hint="ejemplo@mail.com"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawablePadding="5dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+
+
+        <TextView
+            android:text="Tipo de Credito"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            />
+
+        <Spinner
+            android:id="@+id/typeCredit"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+
+
+        <TextView
+            android:text="Valor Prestamo"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:id="@+id/amount"
+            android:hint="Valor del prestamo"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:drawableStart="@drawable/ic_baseline_attach_money_24"
+            android:drawablePadding="5dp"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+
+
+        <TextView
+            android:text="Número de cuotas"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/install12"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/install24"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="24"
+                android:layout_marginLeft="20dp"
+                />
+
+            <RadioButton
+                android:id="@+id/install36"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="36"
+                android:layout_marginLeft="20dp"
+                />
+
+
+
+        </RadioGroup>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+
+
+        <TextView
+            android:text="Incluye Cuota de Manejo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            />
+
+        <Switch
+            android:id="@+id/fees"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+
+
+
+        <TextView
+            android:text="Total Deuda"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            />
+
+        <TextView
+            android:text="Valor Cuota"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+
+
+
+        <TextView
+            android:id="@+id/totalDebt"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            />
+
+        <TextView
+            android:id="@+id/installValue"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:gravity="center">
+
+
+
+
+        <Button
+            android:id="@+id/calculate"
+            android:text="Calcular"
+            android:textAllCaps="false"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#033205"
+
+
+
+            />
+
+        <Button
+            android:id="@+id/clean"
+            android:text="Limpiar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="false"
+            android:backgroundTint="#090909"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
